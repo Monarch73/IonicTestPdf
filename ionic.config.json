@@ -1,0 +1,8 @@
+{
+  "name": "TestPdf",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
