@@ -14,6 +14,8 @@ import { FileTransfer } from '@ionic-native/file-transfer/ngx';
 import { DocumentViewer } from '@ionic-native/document-viewer/ngx';
 import { FileChooser } from '@ionic-native/file-chooser/ngx';
 
+import { FilePath } from '@ionic-native/file-path/ngx';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -25,7 +27,8 @@ import { FileChooser } from '@ionic-native/file-chooser/ngx';
     File,
     FileTransfer,
     DocumentViewer,
-    FileChooser
+    FileChooser,
+    FilePath
   ],
   bootstrap: [AppComponent]
 })
