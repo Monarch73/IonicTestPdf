@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { DocumentViewer, DocumentViewerOptions } from '@ionic-native/document-viewer/ngx';
+import { File } from '@ionic-native/file/ngx';
+import { FileTransfer} from '@ionic-native/file-transfer/ngx';
 
 @Component({
   selector: 'app-docviewer',
@@ -7,8 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DocviewerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private document: DocumentViewer, private file: File, private transfer: FileTransfer) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    alert('test');
+  }
+
+  public openLocalPdf(){
+    const options: DocumentViewerOptions = {
+      title: 'moep'
+    };
+
+    this.document.canViewDocument('assets/sample.pdf', 'application/pdf', options);
+  }
 
 }
