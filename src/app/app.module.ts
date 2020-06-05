@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { File } from '@ionic-native/file/ngx';
 import { FileTransfer } from '@ionic-native/file-transfer/ngx';
 import { DocumentViewer } from '@ionic-native/document-viewer/ngx';
+import { FileChooser } from '@ionic-native/file-chooser/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,7 +24,8 @@ import { DocumentViewer } from '@ionic-native/document-viewer/ngx';
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     File,
     FileTransfer,
-    DocumentViewer
+    DocumentViewer,
+    FileChooser
   ],
   bootstrap: [AppComponent]
 })
