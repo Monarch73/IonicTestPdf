@@ -21,7 +21,7 @@ export class DocviewerComponent implements OnInit {
       title: 'moep'
     };
 
-    this.document.canViewDocument('assets/sample.pdf', 'application/pdf', options);
+    this.document.viewDocument('assets/sample.pdf', 'application/pdf', options);
   }
 
 }
